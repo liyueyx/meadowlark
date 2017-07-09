@@ -1,4 +1,3 @@
-/*
 
 var express = require('express');
 var app = express();
@@ -34,15 +33,11 @@ var server = app.listen(3000, function () {
     console.log('Example app listening at http://%s:%s', host, port);
 });
 
-app.listen(app.get('port'),'localhost',function(){
-    console.log('server stared on localhost:3000');
-});
-
-app.listen(app.get('port'), function(){
+/*app.listen(app.get('port'), function(){
     console.log( 'Express started on http://localhost:' +
         app.get('port') + '; press Ctrl-C to terminate.' );
-});
-*/
+});*/
+/*
 var express = require('express');
 var app = express();
 
@@ -55,4 +50,4 @@ var server = app.listen(3000, function () {
     var port = server.address().port;
 
     console.log('Example app listening at http://%s:%s', host, port);
-});
+});*/
