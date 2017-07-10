@@ -1,4 +1,3 @@
-/*
 
 var express = require('express');
 var app = express();
@@ -27,32 +26,8 @@ app.use(function(err,req,res,next){
     res.end('500 - Server Error');
 });
 
-var server = app.listen(3000, function () {
-    var host = server.address().address;
-    var port = server.address().port;
-
-    console.log('Example app listening at http://%s:%s', host, port);
-});
-
-app.listen(app.get('port'),'localhost',function(){
-    console.log('server stared on localhost:3000');
-});
-
 app.listen(app.get('port'), function(){
     console.log( 'Express started on http://localhost:' +
         app.get('port') + '; press Ctrl-C to terminate.' );
 });
-*/
-var express = require('express');
-var app = express();
 
-app.get('/', function (req, res) {
-    res.send('Hello World!');
-});
-
-var server = app.listen(3000, function () {
-    var host = server.address().address;
-    var port = server.address().port;
-
-    console.log('Example app listening at http://%s:%s', host, port);
-});
